@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    width:100%;
+    height:100vh;
+    background: #fff url(/images/backg1.jpg) no-repeat;
+    backdrop-filter: brightness(50%);
+    
+    background-size: cover;
+    background-position: center;
+    font-family: 'Philosopher', sans-serif;
+}
+.cabecalho{
+    border-bottom: 2px solid wheat;
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    scroll-behavior:auto;
+}
+.cabecalho > .navegacaoTopo > ul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+.cabecalho > .navegacaoTopo > ul > li a{
+    color: wheat;
+    text-decoration: none;
+}

@@ -20,6 +20,7 @@ html {
   scroll-margin-top: .8em;
 }
 body{
+    overflow-x: hidden;
     width:100%;
     height:100vh;
     background: #fff url(/images/backg1.jpg) no-repeat;
@@ -141,7 +142,21 @@ body{
     font-weight: 100;
     text-align: center;
     backdrop-filter: brightness(50%);
+    
 }
+
+.item1:nth-child(1){
+    background-size: cover;
+    
+}
+.item1:nth-child(1):hover {
+    animation: subir backwards linear 2s;
+}
+
+@keyframes subir {
+    
+}
+
 
 .item1>.textoTopo{
     width: 100%;
@@ -164,4 +179,12 @@ body{
 }
 .Div3> h1{
     padding-right: 5%;
+}
+.Div3> h1>a{
+    backdrop-filter: brightness(50%);
+    display: flex;
+    justify-content: end;
+    color:bisque;
+    text-decoration: none;
+    align-items: center;
 }
