@@ -2,26 +2,31 @@
     margin: 0;
     padding: 0;
 }
+
 body{
-    overflow-x: hidden;
-    width:100%;
-    height:100vh;
-    background: #fff url(/images/backg1.jpg) no-repeat;
-    backdrop-filter: brightness(50%);
     
-    background-size: cover;
-    background-position: center;
+    overflow-x: hidden;
+    width:100vw;
+    height:100%;
     font-family: 'Philosopher', sans-serif;
+    box-sizing: border-box;
+    background: #fff url(/images/expresso.jpg)  center center;  
+    backdrop-filter: brightness(50%);
 }
 .cabecalho{
-    border-bottom: 2px solid wheat;
+    border-bottom: 2px solid wheat;    
     width: 100%;
     height: 20vh;
     display: grid;
     place-items: center;
     position: fixed;
+    top:0;
+    left: 0;
+    z-index: 9999;
     scroll-behavior:auto;
+    
 }
+
 .cabecalho > .navegacaoTopo > ul{
     text-decoration: none;
     list-style: none;
@@ -30,4 +35,67 @@ body{
 .cabecalho > .navegacaoTopo > ul > li a{
     color: wheat;
     text-decoration: none;
+}
+
+.finalDiv{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding-top: 10%;
+}
+
+.Div2{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 30px;
+    align-content: center;
+}
+
+
+
+
+
+
+
+.item1{
+    margin-top: 5%;
+    border: wheat 2px solid;
+    width: 25%;
+    height: 40vh;
+    gap: 30px;
+    color: wheat;
+    font-weight: 100;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+    
+    
+}
+
+
+
+
+
+.item1:nth-child(1){
+    background-size: cover;
+}
+
+.item1>.textoTopo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+.item1>.textoTopo > img{
+    width: 100%;
+    height: 99%;
+}
+.item1>.botaoCompar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
